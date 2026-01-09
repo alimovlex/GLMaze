@@ -146,7 +146,7 @@ if(UNIX AND NOT APPLE)
 endif()
 
 # Create Executable
-add_executable(${PROJECT_TARGETBIN} ${GUI_TYPE} ${SRC} ${RESOURCES} ${FRAMEWORKS})
+add_executable(${PROJECT_TARGETBIN} ${GUI_TYPE} ${SRC} ${RESOURCES})
 if(WIN32)
   add_executable(${PROJECT_TARGETBIN}_Screensaver ${GUI_TYPE} ${SRC} ${RESOURCES} ${FRAMEWORKS})
   target_compile_definitions(${PROJECT_TARGETBIN}_Screensaver PRIVATE SCREENSAVER=1)
